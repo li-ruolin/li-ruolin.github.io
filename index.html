@@ -1,53 +1,348 @@
-<!DOCTYPE html>
-<html>
-<body align="center">
-    <head>
-    <style>
-        #demo{
-text-align:center
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hi</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-        }
-        
-        body{
-     background-image:url(bp2.png);
-     background-repeat:no-repeat;
-        background-size:95% auto;
-       background-position: center;
+body {
+  margin: 0;
+}
 
-  
+/* Style the header */
+.header {
+  background-color: #f6a7ba;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover悬停时候的颜色 */
+.topnav a:hover {
+  background-color: #e86c8a;
+  color: pink;
+}
+
+/* Create three unequal columns that floats next to each other 三个不相等的咧，彼此浮动*/
+.column {
+  float: left;
+  padding: 10px;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f6a7ba;
+  padding: 10px;
+  text-align: center;
+}
+    
+    .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+
+
+.col-9 {position:fixed; width: 100%; margin-left: 200px; overflow:hidden;display: flex;}
+.col-10 {position:fixed; width: 100%; margin-left: 10%; overflow:hidden;display: flex;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+body {
+  background-image: url("Magic%20Background.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+}
+#head img{
+  float: left;
+  width: 85px;
+    padding:0.7%;;
+}
+
+    #head img:hover{
+        opacity: 0.5;
     }
- 
-</head>
-    </style>
 
-<body>   
-   
-    <div>
-     <div id="demo">
-    <h1>What's up!</h1>
-         
-<p>
-    <font color="#FF69B4">I'm hosted here.</font>
+
+header {
+  background-color: #f093a9;
+  background-image: url("Magic-Wand.png");
+  background-size:12%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  text-align: center;
+  font-size: 180%;
+  color: white;
+  overflow: visible;
+  min-width:800px;
+}
     
-         </p>
-<div id="Link">
-<p><a href="https://li-ruolin.github.io/homework1.html">homework1</a></p >
-<p><a href="https://li-ruolin.github.io/homework2.html">homework2</a></p >
-<p><a href="https://li-ruolin.github.io/homework3.html">homework3</a></p >
-<p><a href="https://li-ruolin.github.io/homework4.html">homework4</a></p >
-<p><a href="https://li-ruolin.github.io/homework5.html">homework5</a></p >
+section {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 20px;
+}
     
+#HeaderUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 600px;  
+}
+    
+#HeaderUl li{
+    float: left;
+    
+    }
+    
+#HeaderUl li a{
+        display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  transition: background-color 1s;
+    }
+    
+#HeaderUl li a:hover{
+        background-color: #e86c8a;
+    transition: background-color 1s;
+    }
+
+    
+    
+.listcontent{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-width: 250px;
+  min-width: 160px;
+
+ 
+}
+.listcontent img{
+        
+        float: left;
+        width: 33px;
+        padding-right:10px;;
+    }
+    
+.listcontent li  {
+        padding-bottom: 10px; 
+    }
+    
+.listcontent li a {
+  border-radius: 25px;
+  display: block;
+  color: #888;
+  padding: 8px 16px;
+  text-decoration: none;
+  background: rgb(240,240,240,0.5);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+  transition: background-color 1s;
+}
+.listcontent li a.active {
+  background-color: rgb(10,100,75,0.4);
+  color: white;
+}
+
+.listcontent li a:hover:not(.active) {
+    
+  background-color: rgb(100,100,100,0.3);
+  transition: background-color 1s;
+}
+    
+.logo div.gallery {
+  height: 500px;
+  border-radius: 0px 0px 25px 25px;
+  background-color: rgb(250, 250, 250,0.5);
+    
+}
+
+.logo div.gallery:hover {
+  background-image: linear-gradient(rgb(50, 0, 0,0), rgb(240, 147, 169,1));
+  color:white;
+  transform: background-image 1s;
+}
+
+.logo div.gallery img {
+
+  width: 100%;
+    min-width: 110px;
+  height: auto;
+}
+
+.logo div.desc {
+  padding: 15px 15px;
+  text-align: center;
+}
+
+
+.responsive {
+  margin-left: 3%;
+  padding: 0px 5px;
+  float:left;
+  width: 120px;
+    
+  
+}
+
+    
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #fcd9e2;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #f6a7ba;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+    
+    
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Hi</h1>
+  <p>What's up!</p>
 </div>
 
-    
-        </p>
-    </div>
-    
-<select style="FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana;BACKGROUND-COLOR: #ff6600;" size=1 > 
-<option selected>:: BLACK ::</option> 
-<option>::PINK::</option> 
+<div class="topnav">
+  <a href="#">Other</a>
+  <a href="#">BOOM</a>
+  
+</div>
 
-</select> 
+<section style=" width: 100%;overflow:hidden">
+
+
+    
+  <div class="col-9">
+      <div class="col-10">
+    <div class="logo responsive">
+  <div class="gallery">
+    <a target="_blank" href="bp5.png">
+      </a><a href="https://li-ruolin.github.io/homework1">
+<img src="bp5.png" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">HOMEWORK1</div>
+  </div>
+</div>
+
+
+<div class=" logo responsive">
+  <div class="gallery">
+    <a target="_blank" href="bp6.png">
+      </a><a href="https://li-ruolin.github.io/homework2">
+        <img src="bp6.png" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">HOMEWORK2</div>
+  </div>
+</div>
+
+<div class=" logo responsive">
+  <div class="gallery">
+    <a target="_blank" href="bp7.png">
+      </a><a href="https://li-ruolin.github.io/homework3">
+<img src="bp7.png" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">HOMEWORK3</div>
+  </div>
+</div>
+
+<div class="logo responsive">
+  <div class="gallery">
+    <a target="_blank" href="bp8.png">
+      </a><a href="https://li-ruolin.github.io/homework4">
+    <img src="bp8.png" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">HOMEWORK4</div>
+  </div>
+</div>
+
+<div class="logo responsive">
+  <div class="gallery">
+    <a target="_blank" href="bp9.png">
+      </a><a href="https://li-ruolin.github.io/homework5">
+    <img src="bp9.png" alt="logo_5" width="600" height="400">
+    </a>
+    <div class="desc">HOMEWORK5</div>
+  </div>
+</div>
+    </div>
+</div>
+</section>
+  
+    <ul>
+  <li><a class="active" href="#BLINKS">BLINKS</a></li>
+          <li><a href="#JISOO">JISOO</a></li>
+  <li><a href="#JENNIE">JENNIE</a></li>
+  <li><a href="#ROSIE">ROSIE</a></li>
+  <li><a href="#LISA">LISA</a></li>
+</ul>
     
 </body>
 </html>
